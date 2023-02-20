@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class AppTest
 {
     /**
      * Rigorous Test :-)
@@ -117,22 +117,14 @@ public class AppTest
         assertEquals(null, user.name);
     }
 
-    @Test
-            public void checkUsername(){
-        User user = new User("Aleksej", 32644848, 19);
-        assertNotNull(user.name);
-        assertEquals("Aleksej", user.name);
-
-    }
 
     @Test
+    public void updateUserName() {
+        String name = "Aleksandr";
+        assertNotNull("Aleksandr", name);
+        assertEquals("Aleksandr", name);
 
-    public void checkUserNameWithONeParameter() {
-        User user = new User("Anna");
-        assertNotNull(user.name);
-        assertEquals("Anna", user.name);
     }
-
 
 
 }

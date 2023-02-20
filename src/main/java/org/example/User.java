@@ -16,9 +16,7 @@ public class User {
         this.age = userAge;
     }
 
-    public User (String userName){
-        this.name = userName;
-    }
+
 
 //    User user = new User( "Aleksandr", 254146484, 19);
 //    assertNotNull(user.name);
