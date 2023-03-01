@@ -17,10 +17,14 @@ public class User {
     }
 
 
+    public String UpdateUserName() {
+        if (name == null) {
+            return name = "The old one";
+        } else {
+            return name = name + "Updated name";
+        }
+    }
 
-//    User user = new User( "Aleksandr", 254146484, 19);
-//    assertNotNull(user.name);
-//    assertEquals("Aleksandr", user.name);
 
 
 }
