@@ -16,7 +16,7 @@ public class AppTest
     public void checkCalculatorSubtraction()
     {
         Calculator calculator = new Calculator();
-        int result = calculator.subTwoValues(10, 6 );
+        int result = calculator.substractionTwoValues(10, 6 );
         assertEquals(4, result);
     }
 
@@ -26,42 +26,42 @@ public class AppTest
     public void checkCalculatorWithSecondZeroValueSubtraction(){
 
         Calculator calculator = new Calculator();
-        int result = calculator.subTwoValues(10, 0 );
+        int result = calculator.substractionTwoValues(10, 0 );
         assertEquals(10, result);
     }
 
     @Test
     public void checkCalcWithFirstZeroValueSub(){
         Calculator calculator = new Calculator();
-        int result = calculator.subTwoValues(0 , 2);
+        int result = calculator.substractionTwoValues(0 , 2);
         assertEquals(-2, result);
     }
 
     @Test
     public void checkCalculateWithFirstNegativeValuesSub(){
         Calculator calculator = new Calculator();
-        int result = calculator.subTwoValues(-1, 2);
+        int result = calculator.substractionTwoValues(-1, 2);
         assertEquals(-3, result);
     }
 
     @Test
     public void checkCalculateWithSecondNegativeValuesSub() {
         Calculator calculator = new Calculator();
-        int result = calculator.subTwoValues(10, -2);
+        int result = calculator.substractionTwoValues(10, -2);
         assertEquals(12, result);
     }
 
     @Test
     public void checkCalculateWithTwoNegativeValuesSub() {
         Calculator calculator = new Calculator();
-        int result = calculator.subTwoValues(-5, -2);
+        int result = calculator.substractionTwoValues(-5, -2);
         assertEquals(-3, result);
     }
 
     @Test
     public void checkCalculateSecondValueBiggerSub(){
         Calculator calculator = new Calculator();
-        int result = calculator.subTwoValues(10, 15);
+        int result = calculator.substractionTwoValues(10, 15);
         assertEquals(-5, result);
     }
 
