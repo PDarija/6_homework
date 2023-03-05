@@ -7,24 +7,19 @@ public class User {
     int age;
 
 
-    public User (){
+    public User() {
     }
 
-    public User( String userName, long userId, int userAge){
+    public User(String userName, long userId, int userAge) {
         this.name = userName;
         this.id = userId;
         this.age = userAge;
     }
 
 
-    public String UpdateUserName() {
-        if (name == null) {
-            return name = "The old one";
-        } else {
-            return name = name + "Updated name";
-        }
-    }
-
 
 
 }
+
+
+

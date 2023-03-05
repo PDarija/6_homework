@@ -120,9 +120,10 @@ public class AppTest
 
     @Test
     public void updateUserName() {
-        String name = "Aleksandr";
-        assertNotNull("Aleksandr", name);
-        assertEquals("Aleksandr", name);
+        User newUser = new User("Aleksand", 587548, 25 );
+        newUser.name = "Edgar";
+        assertEquals("Edgar", newUser.name);
+
 
     }
 
